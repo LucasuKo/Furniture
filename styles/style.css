@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&family=Open+Sans&display=swap');
+
+:root {
+    --cor-primaria: #000;
+    --cor-secundaria: #fff;
+    --cor-terciaria: #48ADB8;
+    --cor-quaternario: #272727;
+
+    --fonte-primaria: 'M PLUS Rounded 1c', sans-serif;
+    --fonte-secundaria: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo__cabecalho{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+}
+
+.cabecalho__capa{
+    width: 100%;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal__titulo {
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 5%;
+}
+
+.principal__titulo::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin: 0 auto;
+    background: var(--cor-terciaria);
+    border-radius: 99px;
+}
+
+.principal__paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 3% 25% 6% 25%;
+}
+
+.secao__dupla{
+    display: flex;
+    padding: 8% 19% 8% 22%;
+}
+
+/*.secao__imagem::after {
+    content: '';
+    display: flex;
+    height: 120px; 
+    width: 3px;
+    margin: 0 auto;
+    background: var(--cor-terciaria);
+    border-radius: 99px;
+}
+*/
+
+.secao__texto{
+    padding: 0 5%;
+}
+
+.secao__texto h2{
+    font-family: var(--fonte-primaria); 
+    font-size: 2rem;   
+}
+
+.secao__texto p{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
+.pessoa__sofa{
+    display: flex;
+    justify-content: center;    
+}
+
+.orcamento {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.orcamento__titulo {
+    font-family: var(--fonte-primaria); 
+    font-size: 2rem; 
+}
+
+.orcamento__paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    padding: 2%;
+}
+
+.orcamento__botao {
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    text-align: center;
+    width: 490px;
+    height: 50px;
+    border-radius: 9px;
+}
+
+.imagem__footer img{
+    width: 100%;
+    height: 100%;
+}
+
+.botoes__footer {
+    background-color: #48ADB8;
+    padding: 10px;
+}
