@@ -6,15 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/slyde.css">
+    <script src="slide.js" defer></script>
     <link rel="icon" type="img/svg" href="assets/sofa.svg">
 </head>
 
 <body>
     <header class="cabecalho">
         <h2 class="titulo__cabecalho">Furniture<img src="assets/sofa.svg"></h2>
-        <img class="cabecalho__capa" src="assets/capa.png">
+        <section class="slider">
+            <div class="slider__content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+                <div class="slide__box primeiro">
+                    <img class="img__desktop" src="assets/capa.png" alt="slide 1">
+                </div>
+                <div class="slide__box">
+                    <img class="img__desktop" src="assets/capa-1.png" alt="slide 1">
+                </div>
+                <div class="slide__box">
+                    <img class="img__desktop" src="assets/capa-2.png" alt="slide 1">
+                </div>
+                <div class="slide__box">
+                    <img class="img__desktop" src="assets/capa-3.png" alt="slide 1">
+                </div>
+                <div class="nav__auto">
+                    <div class="auto__btn1"></div>
+                    <div class="auto__btn2"></div>
+                    <div class="auto__btn3"></div>
+                    <div class="auto__btn4"></div>
+                </div>
+                <div class="nav__manual">
+                    <label for="radio1" class="manual__btn"></label>
+                    <label for="radio2" class="manual__btn"></label>
+                    <label for="radio3" class="manual__btn"></label>
+                    <label for="radio4" class="manual__btn"></label>
+                </div>
+            </div>
+        </section>
     </header>
-    <main>
+    <main class="geral">
         <section class="principal">
             <h1 class="principal__titulo">Furniture</h1>
             <p class="principal__paragrafo">
@@ -24,7 +57,6 @@
             </p>
             <img class="principal__imagem" src="assets/sofa-2.png" alt="">
         </section>
-    </main>
     <section class="secao__dupla">
         <div class="secao__imagem">
             <img src="assets/sofa-3.png">
@@ -52,13 +84,21 @@
             Faça seu orçamento <img src="assets/carrinho.svg" alt="">
         </a>
     </section>
-    <footer class="imagem__footer">
-        <img src="assets/sofa-footer.png" alt="">
+</main>
+<div class="quebra">
+
+</div>
+    <footer class="footer">
+            <div class="container__footer flex">
+                <div class="logo__footer">
+                    <img src="assets/logo-footer.png">
+                </div>
+                <div class="botoes__footer">
+                    <a href="https://www.linkedin.com/in/lucas-barboza-oliveira/"><img src="assets/facebook.svg" alt="Logo Facebook"></a>
+                    <a href="https://wa.me/61986296100"><img src="assets/whatsapp.svg" alt="Logo Whatsapp"></a>
+                    <a href="https://www.instagram.com/licas_alves/"><img src="assets/instagram.svg" alt="Logo Footer"></a>
+                </div>
+            </div>
     </footer>
-    <div class="botoes__footer">
-        <a>Facebook</a>
-        <a>Whatsapp</a>
-        <a>Instagram</a>
-    </div>
 </body>
 </html>
