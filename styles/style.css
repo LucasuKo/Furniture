@@ -206,6 +206,10 @@
         display: inline-block;
         padding: 30px 0;
     }
+    .secao__texto{
+        padding: 2%;
+    }
+
     .secao__texto h2{
         padding: 3% 0;
     }
